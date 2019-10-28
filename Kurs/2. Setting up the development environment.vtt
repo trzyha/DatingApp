@@ -1,0 +1,238 @@
+WEBVTT
+
+00:00.550 --> 00:05.710
+So before we start building our application we're going to need some software to help us build this.
+
+00:05.710 --> 00:08.730
+Now we're using dot net core for our web API.
+
+00:08.760 --> 00:14.850
+So what we need to download and install is the dot net core SDK from Microsoft.
+
+00:14.860 --> 00:20.500
+Now you can get this from dot net dot Microsoft dot com and this will take you to the home page.
+
+00:20.500 --> 00:25.570
+And I'm just going to go to the download section now the latest version released of dot net core is
+
+00:25.570 --> 00:33.670
+version 2.0 2 at the time of recording and also at the time of recording dot net core 3.0 is in preview
+
+00:33.670 --> 00:34.170
+mode.
+
+00:34.180 --> 00:39.550
+So if some things in preview mode I wouldn't recommend installing that for a training course because
+
+00:39.940 --> 00:44.830
+whilst the code that we write is going to be the same I've taken a look at the preview and the code
+
+00:44.830 --> 00:49.960
+that we're writing is the same what you might have an issue with is when we add additional packages
+
+00:50.320 --> 00:54.190
+later on you might have a problem if you're using dot net core 3.0.
+
+00:54.670 --> 01:01.450
+So what I'd recommend is just grab the latest version just click the download and for dot net core SDK
+
+01:01.810 --> 01:05.080
+this will give you the latest released version of this SDK.
+
+01:05.710 --> 01:10.090
+And like I say at the moment it's on dot net core to point to.
+
+01:10.210 --> 01:15.370
+And once you've downloaded and installed this hour and so your intelligence by showing you how to install
+
+01:15.370 --> 01:16.170
+software.
+
+01:16.270 --> 01:20.710
+But once you do have it installed and just come into a terminal or a command prompt window.
+
+01:20.710 --> 01:24.660
+And this will give you access to the dot net command line interface.
+
+01:24.760 --> 01:32.530
+And what we want to do is just typing dot net that stash info and this will tell you which SDK you have
+
+01:32.530 --> 01:36.140
+installed and which dot net core runtime you have installed.
+
+01:36.250 --> 01:38.860
+I have multiple of these installed side by side.
+
+01:38.860 --> 01:40.300
+That's absolutely fine.
+
+01:40.300 --> 01:44.470
+But it's not necessary for you to have all of the previous versions installed.
+
+01:44.620 --> 01:47.630
+Just make sure you've got the latest version available.
+
+01:47.730 --> 01:53.270
+I'm on the latest version available at a time of this recording is two point two for a one.
+
+01:53.380 --> 02:00.880
+And the host which is the version of the dot net runtime we're installing is two point two point six.
+
+02:00.970 --> 02:07.030
+The DOT SDK gives us access to the command line interface that we're using as well as the build tools
+
+02:07.030 --> 02:14.080
+to help us develop our application and the runtime is actually was used to host and run our complete
+
+02:14.080 --> 02:15.140
+application.
+
+02:15.140 --> 02:19.550
+So many by fan when we install the SDK we also get the runtime installed as well.
+
+02:19.570 --> 02:21.100
+So you need that for sure.
+
+02:21.100 --> 02:29.170
+For starters what we also need is nodes J.S. and this is a javascript runtime that we use with our angular
+
+02:29.170 --> 02:36.820
+application a set and tools that we need from no J.S. to help us build our angular application including
+
+02:37.000 --> 02:42.990
+a node package manager which will help us to install additional packages that we need to help us build
+
+02:43.000 --> 02:47.600
+that and the latest one available is twelve point nine point A.
+
+02:47.860 --> 02:53.880
+And I would recommend sticking to version twelve of this for angular version 8.
+
+02:54.340 --> 03:01.100
+It's hard to predict the types of problems you might experience with future releases of no J.S..
+
+03:01.240 --> 03:07.100
+So you're perfectly fine with either of these two versions even version 10 or version twelve.
+
+03:07.300 --> 03:10.490
+And once you have this installed then what you should be able to do.
+
+03:10.690 --> 03:17.270
+I'll just clear my console and what you should be able to do is type in node dash dash version and it
+
+03:17.280 --> 03:21.720
+will tell you which version of No G1 I'm on version twelve point eight point one so I didn't have the
+
+03:22.170 --> 03:28.290
+absolute latest but any versions 12 is fine or version 10 is fine as well.
+
+03:28.950 --> 03:32.800
+And what this gives us access to is a tool called NPM.
+
+03:33.030 --> 03:40.560
+And if I just type in NPM version then I'm on six point ten point two of LAX and we'll be using NPM
+
+03:40.560 --> 03:48.240
+to install various packages to help us build our angular application what we also need is a code that
+
+03:48.320 --> 03:48.480
+her.
+
+03:48.510 --> 03:53.040
+Now the one I'm using for all of the demos is visual studio code.
+
+03:53.040 --> 03:59.400
+This is an excellent free to use cross platform code editor that we can use to build and compile out
+
+03:59.520 --> 04:00.810
+dot net core code.
+
+04:01.020 --> 04:07.120
+And it's also excellent for typescript which is what we used to write our angular application.
+
+04:07.230 --> 04:13.080
+Now ever I.D. and code editors are available but when it comes to writing dot net core code you are
+
+04:13.080 --> 04:20.760
+restricted on ideas that are capable of compiling C sharp code and currently that means even using Visual
+
+04:20.760 --> 04:23.170
+Studio code as I'm showing here.
+
+04:23.330 --> 04:29.630
+Iva Visual Studio 2017 or 2019 the full versions are never available for Windows.
+
+04:29.670 --> 04:36.390
+There is a visual studio for Mac but the last time I used it was not a great experience so I wouldn't
+
+04:36.390 --> 04:43.260
+recommend that although it's been a while and there's also an ever IDC called rider from Jet brains
+
+04:43.290 --> 04:46.660
+which is also very good and that one is cross platform.
+
+04:46.830 --> 04:49.950
+But the downside to that one is it's not free.
+
+04:49.950 --> 04:53.640
+Now if you're just getting started I would highly recommend Visual Studio code.
+
+04:53.670 --> 04:57.170
+All of the demos it and in Visual Studio code from my side of things.
+
+04:57.360 --> 05:02.550
+So the experience should be identical for yourselves when you're coding along to go ahead and install
+
+05:02.550 --> 05:05.000
+this for your particular operating system.
+
+05:05.010 --> 05:10.470
+Another tool that will use is a tool called postman and we can get this from get postman dot com.
+
+05:11.100 --> 05:17.100
+And this is going to allow us to test and query our API without needing to use the browser.
+
+05:17.220 --> 05:26.190
+And on this page we should find a download button somewhere although I'm just saying information for
+
+05:26.190 --> 05:32.370
+buying tickets for our conference and we just want to go into the product where it's got postman and
+
+05:32.370 --> 05:35.340
+download this app and this is what we're looking for.
+
+05:35.370 --> 05:38.640
+So please do go ahead and download this as well.
+
+05:38.640 --> 05:44.850
+And the other tool will need because we're using secret life for development then it's useful to be
+
+05:44.850 --> 05:51.720
+able to browse the data lists inside that database and the tool that helps us do this is called DV browser
+
+05:51.720 --> 05:53.220
+for sequel lines.
+
+05:53.220 --> 05:58.620
+Now if you've never used secret light before line sequel II is really just a file based relational database
+
+05:59.010 --> 06:04.680
+and it's brilliant for development because we don't need to install a database server onto our computer
+
+06:05.070 --> 06:06.520
+and we can literally use this.
+
+06:06.530 --> 06:11.070
+Anyway it's very useful for development and I did mention earlier we won't be using it for production
+
+06:11.520 --> 06:13.680
+but it's super useful for development.
+
+06:13.980 --> 06:16.680
+So please do you go ahead and install this one as well.
+
+06:16.680 --> 06:18.270
+So now we've got the software installed.
+
+06:18.270 --> 06:21.060
+Next step will actually start creating our projects.

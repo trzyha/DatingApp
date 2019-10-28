@@ -1,0 +1,8 @@
+C:\Users\Konstruktor\Desktop\C#\obj\Debug\netcoreapp2.2\C#.csprojAssemblyReference.cache
+C:\Users\Konstruktor\Desktop\C#\obj\Debug\netcoreapp2.2\C#.csproj.CoreCompileInputs.cache
+C:\Users\Konstruktor\Desktop\C#\obj\Debug\netcoreapp2.2\C#.AssemblyInfoInputs.cache
+C:\Users\Konstruktor\Desktop\C#\obj\Debug\netcoreapp2.2\C#.AssemblyInfo.cs
+C:\Users\Konstruktor\Desktop\Csharp\obj\Debug\netcoreapp2.2\C#.csprojAssemblyReference.cache
+C:\Users\Konstruktor\Desktop\Csharp\obj\Debug\netcoreapp2.2\C#.csproj.CoreCompileInputs.cache
+C:\Users\Konstruktor\Desktop\Csharp\obj\Debug\netcoreapp2.2\C#.AssemblyInfoInputs.cache
+C:\Users\Konstruktor\Desktop\Csharp\obj\Debug\netcoreapp2.2\C#.AssemblyInfo.cs

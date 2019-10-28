@@ -1,0 +1,127 @@
+WEBVTT
+
+00:00.320 --> 00:04.180
+Welcome to module too and this module is the walking skeleton.
+
+00:04.260 --> 00:07.140
+And what is a walking skeleton.
+
+00:07.670 --> 00:15.030
+Well a walking skeleton is a tiny implementation of a system that performs a small end to end function.
+
+00:15.080 --> 00:20.540
+It need not use the fine architecture but it should link together the main architectural components
+
+00:21.050 --> 00:25.390
+and then the architecture and the functionality can evolve in parallel.
+
+00:25.400 --> 00:28.010
+Now our applications going to be made up of several parts.
+
+00:28.020 --> 00:31.400
+We are using a database we are using an object relational map.
+
+00:31.970 --> 00:39.320
+We are using an API and then we're using a javascript framework angular for our user interface and we
+
+00:39.320 --> 00:45.020
+want all of these components of our architecture to be working and we want to prove that they're working
+
+00:45.500 --> 00:49.600
+before we then go on and build out the functionality of this application.
+
+00:49.700 --> 00:54.830
+So our application architecture is going to contain a database where the table with a couple of values
+
+00:54.830 --> 01:00.950
+in that we learn one of display only aced him old page look can be viewed by the client and in between
+
+01:00.950 --> 01:07.700
+the database and the client is going to be object relational mapping entity framework allows a API to
+
+01:07.700 --> 01:13.800
+send queries to this database and then we're going to fetch these values via API from our spa singular
+
+01:13.820 --> 01:15.080
+application.
+
+01:15.080 --> 01:20.690
+And our goal of this particular module is to ensure that all of these pieces can work together and we
+
+01:20.690 --> 01:23.460
+can display these values on the client at the end.
+
+01:23.540 --> 01:28.040
+So how are we going to achieve this why we're going to do this in this module by first of all creating
+
+01:28.040 --> 01:33.410
+the Web API product but review the files are created by the dot net seelye lacks the all we're going
+
+01:33.410 --> 01:36.390
+to be using to create our Web API.
+
+01:37.130 --> 01:41.990
+Then we're going to ensure our way the API actually run successfully or create our database and to do
+
+01:41.990 --> 01:47.590
+this we'll use the code first approach all and model first approach as it's sometimes called.
+
+01:48.450 --> 01:52.270
+Then we're going to use source control to check in all of our changes.
+
+01:53.040 --> 01:59.020
+We'll create the angler application will then configure our anger up Kason to fetch data from our API
+
+01:59.790 --> 02:04.110
+and then we're going to bind the data we get back from the API to the east here Mal so that we can lend
+
+02:04.120 --> 02:05.820
+displayer on the page.
+
+02:05.820 --> 02:11.400
+And during this but also going to add support for beach drap and pontorson so that we can make our styling
+
+02:11.400 --> 02:17.160
+of our application significantly easier than starting from scratch with CSA.
+
+02:17.340 --> 02:22.230
+So as with any model in this course will occur before and after so we can see what were actually working
+
+02:22.230 --> 02:24.560
+towards now.
+
+02:24.990 --> 02:27.710
+In this particular module it's not going to blow your socks off.
+
+02:27.720 --> 02:28.330
+There's going to.
+
+02:28.350 --> 02:34.140
+It's our goal for less is purely to display data on a page from the database.
+
+02:34.140 --> 02:36.500
+So we'll take a look at the before and after anyway.
+
+02:36.540 --> 02:40.770
+So this is before you absolutely nothing just an empty Command Prompt Window.
+
+02:40.790 --> 02:42.260
+And this is where we're starting.
+
+02:43.170 --> 02:45.460
+And by the end of this module this is where we're going to get to.
+
+02:45.480 --> 02:50.610
+Now I appreciate this doesn't look like very much but these values that appear on the page these are
+
+02:50.610 --> 02:55.820
+being displayed from our or being hauled in via our API from our database.
+
+02:55.920 --> 03:00.870
+And this is what we're going to get to so we can confirm that our spa can talk to our API which can
+
+03:00.870 --> 03:05.270
+talk to our database and then we can return this and display it on the page.
+
+03:05.670 --> 03:08.690
+Okay so now we've seen what we're going to look at let's get started.
